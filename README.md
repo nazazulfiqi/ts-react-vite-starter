@@ -1,50 +1,54 @@
-# React + TypeScript + Vite
+# Vite + React + Tailwind CSS + TypeScript Starter and Boilerplate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <h2>🔋 ts-react-vite-starter</h2>
+  <p> Vite + React + Tailwind CSS + TypeScript starter packed with useful development features.</p>
+  <p>Made by <a href="https://nazazulfiqi.me">Naza Zulfiqi</a></p>
 
-Currently, two official plugins are available:
+[![GitHub Repo stars](https://img.shields.io/github/stars/theodorusclarence/ts-nextjs-tailwind-starter)](https://github.com/theodorusclarence/ts-nextjs-tailwind-starter/stargazers)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+</div>
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This repository is 🔋 battery packed with:
 
-- Configure the top-level `parserOptions` property like this:
+- ⚡️ Vite
+- ⚛️ React 18 with React Router v7
+- ✨ TypeScript
+- 💨 Tailwind CSS 3 — Configured with CSS Variables to extend the **primary** color
+- 🃏 Jest — Configured for unit testing
+- 📈 Absolute Import and Path Alias — Import components using `@/` prefix
+- 📏 ESLint — Find and fix problems in your code, also will **auto sort** your imports
+- 💖 Prettier — Format your code consistently
+- 👷 Github Actions — Lint your code on PR
+- 🔥 Snippets — A collection of useful snippets
+- 🗺 Site Map — Automatically generate sitemap.xml
+- 📦 Expansion Pack — Easily install common libraries, additional components, and configs.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Getting Started
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Clone This Repository**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   You can clone this repository or use it as a template:
+
+   - **To clone:**
+
+     ```bash
+     git clone <!https://github.com/nazazulfiqi/ts-react-vite-starter.git>
+     cd ts-react-vite-starter
+     ```
+
+   - **To use as a template:**  
+     Click the **"Use this template"** button on the GitHub page.
+
+     **Note:** By using this repository as a template, your repository will show an attribution to this template.  
+     I’d appreciate it if you do, as it helps others discover and benefit from this template too! 😄
+
+2. **Install Dependencies**
+
+   Run the following command to install the required dependencies:
+
+   ```bash
+   npm install
